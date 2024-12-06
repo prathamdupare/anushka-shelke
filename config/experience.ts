@@ -30,7 +30,7 @@ export interface ExperienceInterface {
 export const Experiences: ExperienceInterface[] = [
   {
     id: "biomedical-nlp",
-    companyName: "IISERB, MP",
+    companyName: "BIOMEDICAL DATA INTEGRATION AND NLP AUTOMATION WITH KG",
     type: "Internship",
     category: ["Biomedical", "NLP", "Knowledge Graphs"],
     shortDescription:
@@ -56,7 +56,8 @@ export const Experiences: ExperienceInterface[] = [
   },
   {
     id: "social-media-fact-checking",
-    companyName: "IISERB, MP",
+    companyName:
+      " SOCIAL MEDIA FACT-CHECKING WITH NLP AND DEEP LEARNING ,IISERB, MP",
     type: "Internship",
     category: ["NLP", "Deep Learning", "Fact-Checking"],
     shortDescription:
@@ -81,7 +82,8 @@ export const Experiences: ExperienceInterface[] = [
   },
   {
     id: "econometric-insights",
-    companyName: "IISERB, MP",
+    companyName:
+      " ECONOMETRIC INSIGHTS UNVEILED: UNLEASHING STATA PROFICIENCY ,IISERB, MP",
     type: "Internship",
     category: ["Econometrics", "STATA", "Data Analysis"],
     shortDescription:
