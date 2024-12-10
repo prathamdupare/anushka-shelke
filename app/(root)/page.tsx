@@ -136,7 +136,7 @@ export default async function IndexPage() {
   return (
     <>
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center mt-52 md:mt-40">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center my-52 md:mt-40">
           {/* <Link
                         href={"siteConfig.links.twitter"}
                         className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
