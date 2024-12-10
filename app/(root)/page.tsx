@@ -16,21 +16,10 @@ import { pagesConfig } from "@/config/pages";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import AnushkaImg from "@/public/Anushka-img.jpg";
+import { LinkedinIcon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-// import {
-//     Accordion,
-//     AccordionContent,
-//     AccordionItem,
-//     AccordionTrigger,
-// } from "@/components/ui/accordion";
-// import {
-//     DropdownMenu,
-//     DropdownMenuContent,
-//     DropdownMenuLabel,
-//     DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu";
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -38,6 +27,14 @@ export const metadata: Metadata = {
 };
 
 export default async function IndexPage() {
+  const links = [
+    {
+      name: "LinkedIn",
+      url: "http://www.linkedin.com/in/anushka-shelke-b90109212",
+      icon: <LinkedinIcon />,
+    },
+  ];
+
   const achievements = [
     {
       title:
@@ -67,19 +64,19 @@ export default async function IndexPage() {
       institution:
         "Indian Institute of Science Education and Research (IISER), Bhopal",
       date: "August 2024",
-      details: ["CPI: 7.57/10"],
+      details: [""],
     },
     {
       title: "High Secondary (12th)",
       institution: "Vasantrao Naik Junior College",
       date: "2017-2019",
-      details: ["Percentage: 65.54%"],
+      details: [""],
     },
     {
       title: "High School (10th)",
       institution: "St. Lawrence High School",
       date: "2017",
-      details: ["Percentage: 92.40%"],
+      details: [""],
     },
   ];
 
@@ -164,6 +161,23 @@ export default async function IndexPage() {
             Data Science Enginner
           </h3>
 
+          <div className="flex justify-center space-x-6">
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-500 transition-colors"
+              >
+                <Button className="flex gap-3">
+                  {link.icon}
+                  {link.name}
+                </Button>
+              </a>
+            ))}
+          </div>
+
           <p>
             I am a graduate MS student in Data Science and Engineering at IISER
             Bhopal, specializing in Machine Learning, AI, Deep Learning, NLP,
@@ -171,6 +185,20 @@ export default async function IndexPage() {
             development, I am focused on applying these skills to solve
             real-world challenges and create impactful solutions.
           </p>
+
+          <div className="flex justify-center space-x-6">
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-500 transition-colors"
+              >
+                <i className={`fab fa-${link.icon} text-2xl`} />
+              </a>
+            ))}
+          </div>
 
           {/* <Accordion
                         type="single"
