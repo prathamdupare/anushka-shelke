@@ -368,7 +368,9 @@ export default async function IndexPage() {
                 </div> */}
       </section>
       <section id="projects" className="py-8">
-        <h2 className="text-2xl font-bold mb-4">Projects</h2>
+        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+          Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
             <Card key={index} className="shadow-sm">
