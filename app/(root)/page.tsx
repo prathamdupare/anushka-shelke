@@ -38,6 +38,29 @@ export const metadata: Metadata = {
 };
 
 export default async function IndexPage() {
+  const achievements = [
+    {
+      title:
+        "Advancing Biocuration and Ligand Design with Large Language Models for Rare Diseases",
+      event: "Drug Discovery Chemistry",
+      location: "San Diego, CA",
+      date: "April 1-4, 2024",
+    },
+    {
+      title:
+        "Leveraging Generative AI and Predictive Modeling via LLMs for Biomedical Research",
+      event: "Bio-IT World Conference",
+      location: "Boston, MA",
+      date: "April 15-17, 2024",
+    },
+    {
+      title: "Fighting Rare Diseases with AI",
+      event: "Discovery on Target Conference",
+      location: "Boston, MA",
+      date: "September 2023",
+    },
+  ];
+
   const education = [
     {
       title: "BS-MS: Data Science & Engineering",
@@ -264,6 +287,31 @@ export default async function IndexPage() {
                         See all the relevant experiences.
                     </p>
                 </div> */}
+      </section>
+
+      <section
+        id="Achievements"
+        className="container space-y-6 bg-slate-50 dark:bg-transparent py-10 my-14"
+      >
+        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+          Achievements
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {achievements.map((achievement, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-sm font-medium">
+                  {achievement.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm">{achievement.event}</p>
+                <p className="text-xs text-gray-500">{achievement.location}</p>
+                <p className="text-xs text-gray-500">{achievement.date}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </section>
 
       <section
