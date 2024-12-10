@@ -136,7 +136,7 @@ export default async function IndexPage() {
   return (
     <>
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center mt-52 md:mt-40">
           {/* <Link
                         href={"siteConfig.links.twitter"}
                         className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
@@ -178,7 +178,7 @@ export default async function IndexPage() {
             ))}
           </div>
 
-          <p>
+          <p className="test-xs">
             I am a graduate MS student in Data Science and Engineering at IISER
             Bhopal, specializing in Machine Learning, AI, Deep Learning, NLP,
             and Generative AI. With hands-on experience in coding and model
